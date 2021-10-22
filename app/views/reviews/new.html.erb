@@ -1,0 +1,9 @@
+<div class='container'>
+ <%= form_for [@restaurant, @review] do |f| %>
+    <%= f.label :content %>
+    <%= f.text_field :content %>
+    <%= f.label :rating %>
+    <%= f.number_field :rating %>
+    <%= f.submit %>
+  <% end %>
+</div>
